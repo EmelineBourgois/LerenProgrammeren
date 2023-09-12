@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+<h1>datatype conversion</h1>
+<h2>number, parseFloat, parseInt</h2>
+<h3>var, let, const</h3>
+
+
+
+<p>
+    <label for="">What is your year of birth?</label>
+    <input type="text" id="yearOfBirth">
+
+    <label for=""> how many years do you want to add?</label>
+    <input type="text" id="numberOfYears">
+
+    <Button type="button" id="calculate"> calculate</Button>
+
+</p>
+
+<p id ="myresult"></p>
+
+<!--end html-->
+
+<!-- begin javascript-->
+<script>
+    // let yearOfBirth = window.prompt("What is your year of birth?");
+    // let aantalJaren = window.prompt("How many year do you want to add?")
+    // yearOfBirth = Number(yearOfBirth)+ Number(aantalJaren);
+
+    // 1. hoe neem je de inputvelden vast
+    // 2. activeer de button
+    // 3. input string een number maken
+    // 4. result overbrengen naar een id, nl myresult in uw html
+
+   document.getElementById("calculate").onclick = function (){
+       let yearOfBirth = document.getElementById("yearOfBirth").value;
+       let numberOfYears = document.getElementById("numberOfYears").value;
+
+       let result = Number(yearOfBirth) Number(numberOfYears);
+
+       document.getElementById("myresult").innerHTML = result
+
+   }
+
+    //console.log(yearOfBirth)
+
+
+
+
+</script>
+<!-- end javascript-->
+
+</body>
+</html>

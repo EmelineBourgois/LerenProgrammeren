@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--begin html-->
+
+<!--oefening -->
+<!--maak een kleine rekenmachine-->
+
+<button type="button" id="plus"> + </button>
+<button type="button" id="min"> - </button>
+<button type="button" id="maal"> * </button>
+<button type="button" id="gedeeld"> / </button>
+<br>
+
+<input type="text" id="firstNumber">
+<input type="text" id="secNumber">
+<br>
+
+<imput type="text" id="result">  </imput>
+<!--end html-->
+
+<!-- begin javascript-->
+<script>
+document.getElementById("plus").onclick =function (){
+    let firstNumber = document.getElementById("firstNumber").value;
+    let secNumber = document.getElementById("secNumber").value;
+    let resultaat = Number(firstNumber) + Number(secNumber);
+    document.getElementById("result").innerHTML = resultaat;
+}
+
+document.getElementById("min").onclick =function (){
+    let firstNumber = document.getElementById("firstNumber").value;
+    let secNumber = document.getElementById("secNumber").value;
+    let resultaat = Number(firstNumber) - Number(secNumber);
+    document.getElementById("result").innerHTML = resultaat;
+}
+document.getElementById("maal").onclick =function (){
+    let firstNumber = document.getElementById("firstNumber").value;
+    let secNumber = document.getElementById("secNumber").value;
+    let resultaat = Number(firstNumber) * Number(secNumber);
+    document.getElementById("result").innerHTML = resultaat;
+}
+document.getElementById("gedeeld").onclick =function (){
+    let firstNumber = document.getElementById("firstNumber").value;
+    let secNumber = document.getElementById("secNumber").value;
+    let resultaat = Number(firstNumber) / Number(secNumber);
+    document.getElementById("result").innerHTML = resultaat;
+}
+
+
+</script>
+<!-- end javascript-->
+
+</body>
+</html>
