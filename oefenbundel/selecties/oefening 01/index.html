@@ -13,22 +13,7 @@
 <input type="text" id="mijnleeftijd">
 <button type="button" id="bereken">bereken</button>
 
-<script>
-
-    document.getElementById("bereken").onclick= function(){
-
-        let leeftijd = Number(document.getElementById("mijnleeftijd").value);
-
-
-        if(leeftijd >= 18){
-            document.write("je bent ", leeftijd," oud. Je mag deelnemen aan de spelen van de Nationale Lotterij!")
-        } else{ document.write("om deel te nemen aan de spelen van de Nationale lotterij moet je minstens 18 jaar oud zijn")
-
-        }
-        }
-
-
-
+<script src="js/index.js">
     // let leeftijd = prompt("wat is jouw leeftijd?(cijfernotatie)");
     //
     // if(leeftijd >= 18){
