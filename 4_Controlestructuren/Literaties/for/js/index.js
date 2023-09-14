@@ -6,8 +6,8 @@
 
 // optelling = i=i+1, i+=1, i++
 
-let som = 0;
-for (let i = 1; i <= 3; i++){
+let som = 0
+for (let i = 1; i <= 3; i++) {
     let getal= Number(prompt("geef getal " + i + " in:"));
     som = som +getal;
 }
