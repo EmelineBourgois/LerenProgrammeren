@@ -8,7 +8,7 @@ while (i <= getal) {
         document.write(", "+ i)
 
         if (i % 3 === 0) {
-            document.write(i + ", ")
+            document.write(", " + i )
         }
     }
     i++;
