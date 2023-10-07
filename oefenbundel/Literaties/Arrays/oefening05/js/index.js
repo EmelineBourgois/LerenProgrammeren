@@ -1,15 +1,14 @@
 let kleineLetters = [];
 let hoofdLetters = [];
+
 let teller = 97;
+let groteLetters = '';
 
-// let test = String.fromCharCode(teller);
-
-for (let X=0;  X<= 25; X++) {
+for (let i = 0; i <= 25; i++) {
     kleineLetters.push(String.fromCharCode(teller));
+    groteLetters = kleineLetters[i].toUpperCase();
+    hoofdLetters.push(groteLetters);
     teller++;
 }
-hoofdLetters.push(kleineLetters)
-hoofdLetters.
-
 document.write(kleineLetters + "<br>");
-document.write(hoofdLetters + "<br>");
+document.write(hoofdLetters);
